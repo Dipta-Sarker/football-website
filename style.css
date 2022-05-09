@@ -1,0 +1,173 @@
+body{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+main{
+	display:grid;
+	justify-content:center;
+}
+
+/*top-section start*/
+.top-section{
+	background-color:#0E3EDA;
+	height:677px;
+	display:flex;
+	justify-content:center;
+	margin-bottom:73px;
+}
+.slide-area{
+	display:flex;
+	justify-content: space-evenly;
+	align-items:center;
+}
+.slide-info{
+	width:30%;
+	font-size:28px;
+	color:white;
+	transition:transform 3s;
+	}
+	
+.slide-info:hover{
+	transform:scale(.5) rotate(360deg);
+}	
+	a{
+		color:white;
+		text-decoration:none;
+		font-size:16px;
+		height:44px;
+		background-color:#E02C6D;
+		padding:5px 10px;
+	}
+.slide-photo{
+	width:30%;
+}
+.slide-photo img{
+	height:428px;
+	width:388px;
+}
+/*top-section end*/
+
+/*card-section start*/
+.card-area{
+	display:grid;
+	grid-template-columns:repeat(3, 1fr);
+	grid-row-gap:30px;
+}
+.card{
+	width:80%;
+	margin:auto;
+	box-shadow:15px 15px 30px gray;
+	padding:10px;
+}
+
+.card img{
+	width:100%;
+}
+/*card-section-end*/
+
+
+/*today-match-section-start*/
+.today-match-section{
+	margin-top:150px;
+}
+.text{
+	text-align:center;
+	font-size:2rem;
+}
+.today-match{
+	display:flex;
+	justify-content:space-evenly;
+	align-items:center;
+}
+.today-match-info{
+	text-align:center;
+}
+/*today-match-section-end*/
+
+/*match-section-start*/
+.match-section{
+	margin:150px 0;
+}
+.match-area{
+	display:grid;
+	grid-template-columns:repeat(2, 1fr);
+}
+.match-info{
+	width:400px;
+	margin:0 auto;	
+}
+.highlight{
+	font-size:47px;
+}
+.match-img img{
+	width:567px;
+}
+/*match-section-end*/
+
+/*Footer-start*/
+.footer-div{
+	text-align:center;
+}
+
+.footer-div img{
+	width:30%;
+}
+
+.footer-icon{
+	font-size:40px;
+	margin-right:10px;
+}
+/*Footer-end*/
+
+/* Media Query start*/
+
+@media (max-width:688px){
+	.top-section{
+		height:100%;	
+	}
+	.slide-area{
+		display:block;
+		
+	}
+	
+	 .slide-info, .slide-photo, .slide-photo img, .match-info, .match-img img{
+		width:100%;
+		margin-bottom:50px;
+	}
+	.card-area, .match-area{
+			
+			grid-template-columns:repeat(1, 1fr);
+	}
+	
+	.today-match{
+		display:block;
+		
+	}
+	.today-match{
+		display: grid;
+		justify-items: center;
+	}
+	
+	.highlight{
+		font-size:1rem;
+	}
+	
+	
+}
+
+
+@media (min-width:689px) and (max-width:900px){
+	.card-area{		
+			grid-template-columns:repeat(2, 1fr);
+	}
+	.match-info, .match-img img{
+		width:100%;
+	}
+	.highlight{
+		font-size:2rem;
+	}
+}
+/*Media Query end*/
